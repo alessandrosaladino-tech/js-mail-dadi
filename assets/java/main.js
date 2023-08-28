@@ -8,16 +8,20 @@
 //Dichiaro le variabili per il numero dell'utente e il numero del computer
 const userNumber = Math.floor((Math.random()* 6) + 1);
 const pcNumber = Math.floor((Math.random()* 6) + 1);
+const generatorsResult = document.getElementById("generatorResult")
 console.log(userNumber,pcNumber)
 
 
 // Calcolo se il numero dell'utente è maggiore del numero del computer
 if (userNumber > pcNumber) {
     console.log (`Hai vinto! Il tuo numero (${userNumber}) è maggiore del numero del computer (${pcNumber})`);
+    generatorsResult.innerHTML = `Hai vinto! Il tuo numero (${userNumber}) è maggiore del numero del computer (${pcNumber})`;
 } else if (pcNumber > userNumber) {
     console.log(`Hai perso! Il numero del computer (${pcNumber}) è maggiore del tuo numero (${userNumber})`);
+    generatorsResult.innerHTML = `Hai perso! Il numero del computer (${pcNumber}) è maggiore del tuo numero (${userNumber})`;
 } else {
     console.log (`Pareggio! Il tuo numero (${userNumber}) è uguale a quello del computer (${pcNumber})`);
+    generatorsResult.innerHTML = `Pareggio! Il tuo numero (${userNumber}) è uguale a quello del computer (${pcNumber})`
 }
 
 //ESERCIZIO EMAIL

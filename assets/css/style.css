@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(124, 55, 55);
+}
+
+.bg_container {
+    background-color: blanchedalmond;
+}
+
+.mt_10 {
+    margin-top: 10rem;
+}
