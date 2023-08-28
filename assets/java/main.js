@@ -30,7 +30,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 //Dichiaro le variabili per la lista email e email utente
 //const userEmail = document.getElementById("email.value");
 const emailsList = ["email1@gmail.com", "email2@hotmail.it", "email3@yahoo.com", "email4@libero.it", "email5@hotmail.it", "email6@gmail.com"];
-
+const finalResult = document.getElementById("result")
 
 //Eseguo un controllo per verificare se la mail inserita è nella lista
 /*for (let i = 0; i< emailsList.length; i++) {
@@ -56,8 +56,10 @@ document.getElementById("send").addEventListener("click", function (e){
 
 
 if (emailsList.includes(emailDOM)) {
+    finalResult.innerHTML = "La tua Email è presente! Puoi accedere"
     console.log('Puoi accedere!');
 } else {
+    finalResult.innerHTML = "La tua  Email non è presente! Accesso negato!"
     console.log('Non puoi accedere!');
 }
 })
