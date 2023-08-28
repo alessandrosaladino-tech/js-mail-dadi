@@ -13,11 +13,11 @@ console.log(userNumber,pcNumber)
 
 // Calcolo se il numero dell'utente è maggiore del numero del computer
 if (userNumber > pcNumber) {
-    console.log (`Hai vinto! Il tuo numero ${userNumber} è maggiore del numero del computer ${pcNumber}`);
+    console.log (`Hai vinto! Il tuo numero (${userNumber}) è maggiore del numero del computer (${pcNumber})`);
 } else if (pcNumber > userNumber) {
-    console.log(`Hai perso! Il numero del computer ${pcNumber} è maggiore del tuo numero ${userNumber}`);
+    console.log(`Hai perso! Il numero del computer (${pcNumber}) è maggiore del tuo numero (${userNumber})`);
 } else {
-    console.log (`Pareggio! Il tuo numero ${userNumber} è uguale a quello del computer ${pcNumber}`);
+    console.log (`Pareggio! Il tuo numero (${userNumber}) è uguale a quello del computer (${pcNumber})`);
 }
 
 //ESERCIZIO EMAIL
