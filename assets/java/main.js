@@ -45,3 +45,12 @@ for (let i = 0; i< emailsList.length; i++) {
 
   console.log(emailCheck);
 }
+
+//Metodo più pulito e veloce 
+/*
+if (emailsList.includes(userEmail)) {
+    console.log('Puoi accedere!');
+} else {
+    console.log('Non puoi accedere!');
+}
+*/
