@@ -28,29 +28,36 @@ stampa un messaggio appropriato sull’esito del controllo.
 */
 
 //Dichiaro le variabili per la lista email e email utente
-const userEmail = prompt ("Inserisci la tua email");
+//const userEmail = document.getElementById("email.value");
 const emailsList = ["email1@gmail.com", "email2@hotmail.it", "email3@yahoo.com", "email4@libero.it", "email5@hotmail.it", "email6@gmail.com"];
 
 
 //Eseguo un controllo per verificare se la mail inserita è nella lista
-for (let i = 0; i< emailsList.length; i++) {
-  const emailList = emailsList[i];
-  
-  let emailCheck = "Email rifiutata, non puoi accedere!";
-  
-  if (userEmail === emailList) {
-    emailCheck = "Puoi Accedere!"
-    i = emailList.length
-  }
-
-  console.log(emailCheck);
-}
+/*for (let i = 0; i< emailsList.length; i++) {
+    const emailList = emailsList[i];
+    
+    let emailCheck = "Email rifiutata, non puoi accedere!";
+    
+    if (userEmail === emailList) {
+        emailCheck = "Puoi Accedere!"
+        i = emailList.length
+    }
+    
+    console.log(emailCheck);
+}*/
 
 //Metodo più pulito e veloce 
-/*
-if (emailsList.includes(userEmail)) {
+
+//Event listener al bottone
+document.getElementById("send").addEventListener("click", function (e){
+    e.preventDefault();
+    const emailDOM = document.getElementById("email").value;
+    console.log(emailDOM);
+
+
+if (emailsList.includes(emailDOM)) {
     console.log('Puoi accedere!');
 } else {
     console.log('Non puoi accedere!');
 }
-*/
+})
